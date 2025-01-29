@@ -1,0 +1,249 @@
+body {
+    height: 970px;
+    width: 1000px;
+    width: auto;
+    align-content: center;
+    justify-items: center;
+    font-family: Hanken Grotesk;
+    background-color: hsl(221, 100%, 96%);
+}
+
+main {
+    width: 41rem;
+    height: 28rem;
+    display: grid;
+    grid-template-columns: 16rem 21rem;
+    border-radius: 30px;
+    box-shadow: 1px 1px 8px hsl(241, 100%, 92%);
+}
+
+@media (max-width: 657px) {
+    main {
+        grid-template-columns: none;
+        box-shadow: none;
+        justify-content: center;
+    }
+
+    body {
+        height: 0;
+    }
+}
+
+.table1 {
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    justify-items: center;
+    width: 20rem;
+    height: 28rem;
+    z-index: 1;
+}
+
+.resulttext {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 22px;
+    color: hsl(241, 100%, 89%);
+}
+
+.resultpoint {
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    box-shadow: 1px 1px 1px hsla(241, 72%, 46%, 0);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    justify-items: center;
+    align-content: center;
+}
+
+.resulttext1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 0.8rem;
+}
+
+.resulttext2 {
+    margin: 0;
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+}
+
+.stattext {
+    margin: 0;
+    margin-top: 2rem;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.infotext {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.table2 {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    width: 22rem;
+    padding-left: 3rem;
+}
+
+.table2text1 {
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-left: 2.8rem;
+    font-weight: bold;
+    font-size: 20px;
+    color: hsl(224, 30%, 27%);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 23px 150px 100px;
+    line-height: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 2.8rem;
+}
+
+.rowscore {
+    color: black;
+    font-weight: bold;
+}
+
+.scoregreytext {
+    color: grey;
+    font-weight: 600;
+}
+
+.row1text {
+    color: hsl(0, 100%, 67%);
+}
+
+.row2text {
+    color: hsl(39, 100%, 56%);
+}
+
+.row3text {
+    color: hsl(166, 100%, 37%);
+}
+
+.row4text {
+    color: hsl(234, 85%, 45%);
+}
+
+.conbtn {
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 50px;
+    height: 3rem;
+    width: 17rem;
+    color: rgb(207, 207, 207);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 3rem;
+
+    transition: transform 0.5s;
+}
+
+.conbtn:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    transform: scale(1.1);
+    transition: transform 0.1s;
+}
+
+@media (max-width: 657px) {
+    .table2 {
+        width: 20rem;
+        padding-left: 0;
+        border-radius: 0;
+        margin-top: -20px;
+    }
+
+    .conbtn {
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .row {
+        margin-left: 2rem;
+    }
+
+    .table1 {
+        margin-top: 4rem;
+        height: 25rem;
+    }
+
+    body {
+        margin-top: -10px;
+    }
+
+    main {
+        width: 20rem;
+    }
+
+    .table2text1 {
+        margin: 0;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        font-size: 16px;
+        margin-bottom: 0.8rem;
+    }
+
+    .row1text,
+    .row2text,
+    .row3text,
+    .row4text,
+    .rowscore {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .resulttext {
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    .stattext {
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    .infotext {
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    .resultpoint {
+        width: 120px;
+        height: 120px;
+    }
+
+    .resulttext1 {
+        font-size: 40px;
+    }
+
+    .resulttext2 {
+        font-size: 12px;
+    }
+
+    .table1 {
+        height: 21rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: 0;
+    }
+}
